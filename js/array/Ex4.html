@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Que 3.1
+        </title>
+    </head>
+    <body>
+        <p id="test"></p>
+        <p id="test1"></p>
+        <p id="test2"></p>
+        <script>
+            var fruits = ["Apple","Banana"]
+            document.getElementById("test").innerHTML = fruits;
+            fruits.splice(1,0,"Orange","Grapes","Pinneapple","Mango","Strawberry");
+            document.getElementById("test1").innerHTML = fruits;
+            var A = fruits[4];
+            document.getElementById("test2").innerHTML = A;
+         </script>
+    </body>
+</html>

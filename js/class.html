@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Class
+        </title>
+    </head>
+    <body>
+        <p id="test"></p>
+        <p id="test1"></p>
+<script>
+    class Animal
+    {
+        constructor(name,petname,age)
+        {
+            this.Animalname=name;
+            this.Animalpetname=petname;
+            this.Animalage=age;
+        }
+    }
+    Animal1=new Animal("Dog","Jimmy",11);
+    Animal2=new Animal("Cat","Roosy",8);
+    document.getElementById("test").innerHTML=
+    "The Animalname is "+ Animal1.Animalname +" Petname is "+ Animal1.Animalpetname+" Age is "+Animal1.Animalage;
+    document.getElementById("test1").innerHTML=
+    "The Animalname is "+ Animal2.Animalname +" Petname is "+ Animal2.Animalpetname+" Age is "+Animal2.Animalage;
+</script>
+    </body>
+</html>

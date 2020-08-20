@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Que 1
+        </title>
+    </head>
+    <body>
+        <p id="test"></p>
+        <script>
+            var text;
+            function greaterNumber(num1,num2)
+            {
+                if (num1>num2){
+                    text="The greater Number is " + num1;
+                }else {
+                    text="The greater Number is " + num2;
+                }
+                return text;
+            }
+            document.getElementById("test").innerHTML=greaterNumber(7,19);
+
+        </script>
+
+    </body>
+</html>

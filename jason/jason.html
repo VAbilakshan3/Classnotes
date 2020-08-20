@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON</title>
+    </head>
+    <body>
+<p id="t1"></p>
+<p id="t2"></p>
+<p id="t3"></p>
+<script>
+
+    var text='{"name":"Abi","age":21,"place":"Jaffna"}';
+    var obj=JSON.parse(text);
+    document.getElementById("t1").innerHTML=obj.name+"  "+obj.age
+
+var newobj={name:"Ab",age:23};
+var newtxt=JSON.stringify(newobj);
+document.getElementById("t2").innerHTML=newtxt;
+
+var student={name:"Ab",age:23};
+var myjson=JSON.stringify(student);
+localStorage.setItem("testjson",myjson);
+
+var newtext=localStorage.getItem("testjson");
+var obj1=JSON.parse(newtext);
+document.getElementById("t3").innerHTML=obj1.name+" Age is "+obj1.age
+
+
+</script>
+
+    </body>
+</html>

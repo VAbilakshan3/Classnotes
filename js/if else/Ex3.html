@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Que 3
+        </title>
+    </head>
+    <body>
+        <p id="test"></p>
+        <script>
+            
+            var grade
+            function assignGrade(score){
+                if (score>=75){
+                    grade=("A");
+                }  else if (score>=60){
+                    grade=("B");
+                }else if (score>=45){
+                    grade=("C");
+                }else {
+                    grade=("F")
+                }return grade;
+            }
+            document.getElementById("test").innerHTML=assignGrade(97)
+        </script>
+
+    </body>
+</html>

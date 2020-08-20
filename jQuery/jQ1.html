@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JQuery
+        </title>
+        <script src="jquery-3.5.1.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+
+           
+            $("p").click(function(){
+                alert("sucess");
+            });
+            $("h1").dblclick(function(){
+                alert("heading")
+            });
+            $("#hide").dblclick(function(){
+                $("p").hide();
+            });
+        });
+        </script>
+    </head>
+    <body>
+<p>Hello</p>
+<p id="hide">Uki</p>
+<h1>Welcome</h1>
+
+    </body>
+</html>

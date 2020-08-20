@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Que 
+        </title>
+    </head>
+    <body>
+        <p id="test"></p>
+        <script>
+            var points=[-20,78,0,66,4,99,100,73]
+            document.getElementById("test").innerHTML=Minimum(points);
+
+            function Minimum(arr){
+            var Length=arr.length;
+            var min=Infinity;
+            while (Length>=0){
+                if(arr[Length]<min){
+                    min=(arr[Length]);
+                }
+                Length--;
+            }
+            return min;
+            }
+        </script>
+        </body>
+        </html>

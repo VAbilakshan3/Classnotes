@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Time
+        </title>
+    </head>
+    <body>
+        <p id="test"></p>
+        <script>
+            hours= new Date().getHours()
+            switch (true){
+                case (12>hours):
+                text="Good Morning";
+                break;
+                case (12<hours):
+                text="Good Afternoon";
+                break;
+                
+            }
+            document.getElementById("test").innerHTML=text;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Que 
+        </title>
+    </head>
+    <body>
+        <p id="test"></p>
+        <script>
+            var points=[-20,78,0,66,4,99,100,73]
+            document.getElementById("test").innerHTML=Maximum(points);
+
+            function Maximum(arr){
+            var Length=arr.length;
+            var max=-Infinity;
+            while (Length>=0){
+                if(arr[Length]>max){
+                    max=(arr[Length]);
+                }
+                Length--;
+            }
+            return max;
+            }
+        </script>
+        </body>
+        </html>
